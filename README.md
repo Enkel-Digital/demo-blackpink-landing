@@ -1,5 +1,5 @@
-# vue-bulma-template
-Template repository for scaffolding simple frontend sites with Vue and Bulma
+# demo-blackpink-landing
+Demo landing page for music artists like Black Pink using the [scaffold](https://github.com/Enkel-Digital/vue-bulma-template). Contact us for one if you are looking to collaborate!
 
 ## Project setup
 ```
@@ -20,9 +20,6 @@ npm run build
 ```
 npm run lint
 ```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ## License, Author and Contributing
 This project is developed and made available under the "MIT License"  
