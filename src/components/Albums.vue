@@ -37,10 +37,19 @@ export default {
 
 <style scoped>
 #albums {
-  /* overflow-y: scroll; */
+  /* css to make the component a scrollable column on the right */
+  max-height: 100%;
+  overflow-y: scroll;
+  position: absolute;
+  bottom: 0;
+  right: 0vw;
+
+  /* Give the top of the albums component a spacing that can be scrolled into */
+  padding-top: 40vh;
 }
 
 .album-image {
+  /* Enforce a consistent width and size since they are all squares. */
   width: 33vw;
 
   /* @todo Instead of em using % that scales for mobile view */
