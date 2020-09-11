@@ -2,29 +2,24 @@
   <div id="app">
     <section class="hero is-fullheight">
       <HeroHead />
+      <!-- @todo Make the image changing -->
       <!-- <img src="./assets/hero 1.webp" alt="Hero" class="image hero-image" /> -->
       <img src="./assets/hero 2.jpg" alt="Hero" class="image hero-image" />
       <!-- <img src="./assets/hero 3.jpg" alt="Hero" class="image hero-image" /> -->
       <HeroBody />
-
-      <Footer />
     </section>
-
-    <!-- Next section after the hero banner -->
   </div>
 </template>
 
 <script>
 import HeroHead from "@/components/HeroHead";
 import HeroBody from "@/components/HeroBody";
-import Footer from "@/components/Footer";
 
 export default {
   name: "App",
   components: {
     HeroHead,
     HeroBody,
-    Footer,
   },
 };
 </script>

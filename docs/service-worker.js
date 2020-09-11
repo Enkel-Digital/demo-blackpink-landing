@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/precache-manifest.8ab215e604d5f51b4c0a135523ab92fb.js"
+  "/precache-manifest.5e2336754a3f88b00f477938ba6c6a0f.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "demo-blackpink-landing"});

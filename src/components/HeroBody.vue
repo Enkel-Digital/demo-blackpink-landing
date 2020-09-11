@@ -1,7 +1,7 @@
 <template>
   <!-- <div class="hero-body"> -->
-  <div class="columns is-centered">
-    <div class="position-left-center column is-6">
+  <div class="columns is-centered is-multiline">
+    <div class="description-box-position column is-6">
       <div class="has-text-left">
         <p class="title artist-name">BLACKPINK</p>
         <div class="icons">
@@ -61,19 +61,24 @@ export default {
 </script>
 
 <style scoped>
-.artist-name {
-  color: white;
-}
-
 /* Maintain the same color regardless of clicking it */
+.artist-name,
 .icons > a,
 a:visited {
   color: white;
 }
 
-.position-left-center {
+.description-box-position {
   position: absolute;
   top: 46%;
   left: 10%;
+}
+
+/* Mobile view to move the description box up */
+@media (max-width: 768px) {
+  .description-box-position {
+    /* Move it higher to be on top of the scrolling albums */
+    top: 10%;
+  }
 }
 </style>

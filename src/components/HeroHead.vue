@@ -6,9 +6,17 @@
       <!-- Container to force nav bar into center with wider side margins -->
       <div class="container">
         <div class="navbar-brand">
-          <a class="navbar-item" href="#">
+          <!-- <a
+            href="#"
+            target="_blank"
+            class="navbar-item"
+            style="pointer-events: none; cursor: default"
+          > -->
+          <!-- Use div instead of anchor tag if no links specified -->
+          <div class="navbar-item">
             <img src="../assets/logo.png" alt="Logo" />
-          </a>
+          </div>
+          <!-- </a> -->
 
           <!-- Using <a> instead of button as it does not need an icon and dont have the inverted colors on click behaviour -->
           <a
@@ -31,9 +39,17 @@
           :class="{ 'is-active': showMobileMenu }"
         >
           <!-- Show the menu at the other end -->
-          <div class="navbar-end">
-            <a class="navbar-item is-active"> Home </a>
-            <a class="navbar-item"> About </a>
+          <div class="navbar-end" @click="showMobileMenu = false">
+            <!-- <a class="navbar-item">Home</a> -->
+            <!-- <a class="navbar-item">About</a> -->
+
+            <a
+              href="https://solutions.enkeldigital.com/"
+              target="_blank"
+              class="navbar-item"
+            >
+              <img src="../assets/ekd_logo.png" alt="Enkel Digital's Logo" />
+            </a>
           </div>
         </div>
       </div>
@@ -51,11 +67,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-/* Gives the nav bar a white fill background and a super thin and light bottom underline to give visual seperation from the content */
-#nav {
-  /* background: white; */
-  /* border-bottom: 1px solid rgb(231, 231, 231); */
-}
-</style>

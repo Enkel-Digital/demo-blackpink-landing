@@ -1,5 +1,4 @@
 <template>
-  <!-- <div class="is-pulled-right" id="albums"> -->
   <div id="albums">
     <div v-for="(album, i) in albums" :key="i">
       <img
@@ -42,7 +41,7 @@ export default {
   overflow-y: scroll;
   position: absolute;
   bottom: 0;
-  right: 0vw;
+  right: 0;
 
   /* Give the top of the albums component a spacing that can be scrolled into */
   padding-top: 40vh;
@@ -54,5 +53,20 @@ export default {
 
   /* @todo Instead of em using % that scales for mobile view */
   margin: 6em;
+}
+
+/* Mobile view to move the description box up */
+@media (max-width: 768px) {
+  .album-image {
+    /* Enforce a consistent width and size since they are all squares. */
+    width: 78vw;
+
+    /* @todo Instead of em using % that scales for mobile view */
+    margin: 6em;
+  }
+
+  #albums {
+    /* @todo Make the album art centered */
+  }
 }
 </style>
